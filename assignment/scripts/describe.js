@@ -26,10 +26,12 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We make a variable called name and give it the value 'Dane' as a string.
+// Then we evaluate if the name value is an exact match to the string value 'Mary'.
+// If the name field is equal to 'Mary' we return a true value of 'Hi, Mary!' into the console.log.
+// If the name field is not equal to 'Mary' we return a false value of 'How do you do?'.
+// Since the name field is equal 'Dane' and not 'Mary' this conditional would be false, so
+// We console.log 'How do you do?'.
 
 //CODE
 /*
@@ -45,10 +47,14 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We create a new variable called secret, and do not set its value.
+// We create a new variable called code, and we set its value to the number 123.
+// We evaluate the variable code with a boolean.  If the value in the code variable is an exact match to 123, we
+// Give the variable secret a string value of 'super' and give the code variable a new numeric value of itself times 2.
+// If the code was false and not 123 we would give the secret variable to a string of 'duper'.
+// We then run the console.log file with the variable secret.
+// Because the initial code value was 123 the statement was true, and 
+// We console.log 'super'.  The variable code would be updated to the number 246.
 
 //CODE
 /*
@@ -70,10 +76,18 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We create three variables. The isStudent variable is created as a boolean value of true.  age variable is a number of 34.
+// zip is a number value of 55407.
+// Our conditional statement asks if isStudent is equal to true AND zip is greater then the number 8000,
+// then in the console.log is shows 'You're a student on the West Coast!', otherwise
+// It evaluates if the variable isStudent is false OR the age variable is less then 30, if either is true
+// It returns 'What are your hobbies?' in the console.log, otherwise
+// If the variable isStudent is true and if true displays 'Welcome to Prime!' in the console.log, otherwise
+// It returns 'How about the weather?' in the console.log.
+// The first condition would be false because the zip is not greater then 8000,
+// The second condition would be false because neither is the isStudent false OR the age is less then 30,
+// The third condition would be true because the isStudent variable is true, therefore
+// We console.log 'Welcome to Prime!'
 
 //CODE
 /*
@@ -129,10 +143,18 @@ if (number >= 2) {
 // colorTwo is set to 'red', and mix is set to true. We check if mix is true 
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
+
 /*
+//FIX - values of variables were swapped. Should be:
+//let colorOne = 'blue';
+//let colorTwo = 'red';
+
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
+
+//FIX - only colorOne was set to purple, not colorTwo. Should be:
+//if (mix === true) {colorOne = 'purple'; colorTwo = 'purple'}
 
 if (mix === true) {
   colorOne = 'purple';
@@ -144,8 +166,14 @@ if (mix === true) {
 // -- they are so we console.log 'throw away the food!'
 
 /*
+//FIX - time should be set as a variable not a constant, should be:
+//let time = 4.
+
 let temp = 40;
 const time = 4;
+
+//FIX - the wrong compound conditional statement was used in the if statement.  Should be:
+//if (temp > 39 && time >= 4)
 
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
@@ -157,8 +185,16 @@ if (temp > 39 || time >= 4) {
 // -- it is, so we console.log 'enter'.
 
 /*
+//FIX - minAge should be set to a variable instead of a constant, should be:
+//let minAge = 21;
+
 let age = 21;
 const minAge = 21;
+
+// FIX - A few things wrong here: the problem has been inverted so it is not accurately determining if age is
+// greater then or equal to minAge, also the problem doesn't say anything about using the console.log('no entry')
+// Should be: 
+// if (age >= minAge) {console.log('enter)}
 
 if(minAge <= age) {
   console.log('no entry');
